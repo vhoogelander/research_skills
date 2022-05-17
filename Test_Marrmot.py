@@ -41,7 +41,7 @@ forcing = ewatercycle.forcing.generate(
     target_model='marrmot',
     dataset='ERA5',
     start_time='2007-01-01T00:00:00Z',
-    end_time='2007-02-27T00:00:00Z',
+    end_time='2010-02-27T00:00:00Z',
     shape="/home/vhoogeland/58d28a2d-a141-446a-b8b2-227808c70fd5/data/shapefiles/Missinaibi/Missinaibi_4214531.shp"
 )
 
@@ -130,6 +130,7 @@ observations_df = observations_df.rename(
 )
 discharge = simulated_discharge_df.join(observations_df)
 discharge.to_csv("/home/vhoogeland/58d28a2d-a141-446a-b8b2-227808c70fd5/Research_Skills_Test.csv")
+
 
 
 # In[122]:
